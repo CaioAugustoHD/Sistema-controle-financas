@@ -1,0 +1,21 @@
+section {
+    border: 1px solid black;
+    padding: 2em 6%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+span {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+@media (max-width: 760px) {
+    
+    span {
+      font-size: 1.7em;  
+    }
+}
