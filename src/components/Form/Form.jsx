@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Form.css";
 
 export function Form(){
 
@@ -8,7 +9,7 @@ export function Form(){
     return (
         <form>
             <div>
-                <label htmlFor="inputDescricao" >Descrição:</label>
+                <label htmlFor="inputDescricao" >Descrição </label>
                 <input 
                     type="text" 
                     id="inputDescricao"
@@ -17,7 +18,7 @@ export function Form(){
                     />
             </div>
             <div>
-                <label htmlFor="inputValor" >Valor:</label>
+                <label htmlFor="inputValor" >Valor </label>
                 <input 
                     type="number" 
                     id="inputValor"
@@ -34,7 +35,7 @@ export function Form(){
                     defaultChecked
                     />
                 <label htmlFor="radioEntrada" >Entrada</label>
-
+                <br/>
                 <input 
                     type="radio" 
                     name="opcao" 
