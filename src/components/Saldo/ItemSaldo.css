@@ -1,6 +1,7 @@
 section {
     border: 1px solid black;
-    padding: 2em 6%;
+    padding: 2em 0;
+    width: min(30%, 230px);
     text-align: center;
 }
 
@@ -13,9 +14,22 @@ span {
     font-weight: 700;
 }
 
-@media (max-width: 760px) {
+svg {
+    vertical-align: text-bottom;
+    margin-left: 5px;
+}
+
+@media (max-width: 890px) {
     
+    section {
+        padding: max(5%, 1em) 0;
+    }
+
+    h2 {
+        font-size: max(2.8vw, 1em);
+    }
+
     span {
-      font-size: 1.7em;  
+      font-size: max(3.4vw, 1.3em);  
     }
 }

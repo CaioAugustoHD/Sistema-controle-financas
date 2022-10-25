@@ -7,7 +7,7 @@ main {
     width: 70%;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 890px) {
 
     main {
         width: 82%;
