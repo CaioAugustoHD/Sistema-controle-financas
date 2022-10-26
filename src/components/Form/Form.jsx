@@ -6,6 +6,19 @@ export function Form(){
     const [descricao, setDescricao] = useState("");
     const [valor, setValor] = useState("");
     const [isExpense, setExpense] = useState(false);
+
+    function addTransacao(){
+
+        if(!descricao || !valor){
+            alert("Preencha todos os campos!");
+            return;
+        } else if (valor < 1) {
+            alert("Digite um valor maior que zero!");
+            return;
+        }
+        
+    }
+
     return (
         <form>
             <div>
@@ -45,7 +58,7 @@ export function Form(){
                 <label htmlFor="radioSaida" >Saída</label>
             </div>
             <div>
-                <button type="button">Salvar</button>
+                <button onClick={addTransacao} type="button">Salvar</button>
             </div>
         </form>
     )
