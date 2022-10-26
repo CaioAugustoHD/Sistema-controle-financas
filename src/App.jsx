@@ -5,11 +5,16 @@ import { ConteinerSaldo } from './components/Saldo/ConteinerSaldo'
 import { Form } from './components/Form/Form'
 
 export function App() {
+
+  function registrarTransacao(novaTransacao){
+    console.log(novaTransacao);
+  }
+
   return (
     <>
       <Header/>
       <ConteinerSaldo/>
-      <Form/>
+      <Form registrarTransacao={registrarTransacao}/>
     </>
   )
 }

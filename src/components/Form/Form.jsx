@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "./Form.css";
 
-export function Form(){
+export function Form({registrarTransacao}){
 
     const [descricao, setDescricao] = useState("");
     const [valor, setValor] = useState("");
-    const [isExpense, setExpense] = useState(false);
+    const [isSaida, setSaida] = useState(false);
 
     function addTransacao(){
 
+        // VALIDAÇÃO DOS INPUT'S
         if(!descricao || !valor){
             alert("Preencha todos os campos!");
             return;
@@ -17,6 +18,16 @@ export function Form(){
             return;
         }
         
+        let novaTransacao = {
+            descricao: descricao,
+            valor: valor,
+            saida: isSaida
+        }
+
+        registrarTransacao(novaTransacao);
+
+        setDescricao("");
+        setValor("");
     }
 
     return (
@@ -44,7 +55,7 @@ export function Form(){
                     type="radio" 
                     name="opcao" 
                     id="radioEntrada"
-                    onChange={() => setExpense(!isExpense)}
+                    onChange={() => setSaida(!isSaida)}
                     defaultChecked
                     />
                 <label htmlFor="radioEntrada" >Entrada</label>
@@ -53,7 +64,7 @@ export function Form(){
                     type="radio" 
                     name="opcao" 
                     id="radioSaida"
-                    onChange={() => setExpense(!isExpense)}
+                    onChange={() => setSaida(!isSaida)}
                     />
                 <label htmlFor="radioSaida" >Saída</label>
             </div>
