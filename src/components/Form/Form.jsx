@@ -32,23 +32,25 @@ export function Form({registrarTransacao}){
 
     return (
         <form>
-            <div>
-                <label htmlFor="inputDescricao" >Descrição </label>
-                <input 
-                    type="text" 
-                    id="inputDescricao"
-                    value={descricao}
-                    onChange={(e) => setDescricao(e.target.value)}
-                    />
-            </div>
-            <div>
-                <label htmlFor="inputValor" >Valor </label>
-                <input 
-                    type="number" 
-                    id="inputValor"
-                    value={valor}
-                    onChange={(e) => setValor(e.target.value)}
-                    />
+            <div className="conteinerInput">
+                <div>
+                    <label htmlFor="inputDescricao" >Descrição </label>
+                    <input 
+                        type="text" 
+                        id="inputDescricao"
+                        value={descricao}
+                        onChange={(e) => setDescricao(e.target.value)}
+                        />
+                </div>
+                <div>
+                    <label htmlFor="inputValor" >Valor </label>
+                    <input 
+                        type="number" 
+                        id="inputValor"
+                        value={valor}
+                        onChange={(e) => setValor(e.target.value)}
+                        />
+                </div>
             </div>
             <div>
                 <input 

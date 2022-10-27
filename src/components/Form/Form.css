@@ -3,23 +3,37 @@ form {
     width: 70%;
     margin: 1em auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    padding: 1em;
+    padding: 1em 1em 0;
     font-size: 1.2em;
 }
 
+div {
+    margin: 0 20px 0.8em 0;
+}
+
+div.conteinerInput {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 0 0.8em;
+}
+
 input[type="text"], input[type="number"] {
-    width: 100%;
+    display: block;
     font-size: 0.8em;
     padding: 5px;
 }
 
-input[type="radio"] {
-    margin: 0 3px 0 15px;
-}
-
-button {
+div button {
     padding: 5px 8px;
 }
 
+@media (max-width: 890px) {
+
+    form {
+        width: 82%;
+    }
+}
