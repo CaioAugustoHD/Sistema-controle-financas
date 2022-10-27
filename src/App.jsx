@@ -21,9 +21,12 @@ export function App() {
 
     const somaEntradas = arrayEntradas.reduce((acc, num) => acc + num, 0);
     const somaSaidas = arraySaidas.reduce((acc, num) => acc + num, 0);
+    const calculoTotal = somaEntradas - somaSaidas;
 
-    const calculoTotal = somaEntradas - somaSaidas; 
-    setTotal(calculoTotal);
+    setEntrada(`R$ ${somaEntradas}`);
+    setSaida(`R$ ${somaSaidas}`);
+    setTotal(`R$ ${calculoTotal}`);
+
     
   }, [listaTransacoes]);
   
@@ -39,7 +42,7 @@ export function App() {
   return (
     <>
       <Header/>
-      <ConteinerSaldo/>
+      <ConteinerSaldo entrada={entrada} saida={saida} total={total}/>
       <Form registrarTransacao={registrarTransacao}/>
     </>
   )
