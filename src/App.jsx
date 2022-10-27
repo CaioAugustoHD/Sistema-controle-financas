@@ -3,6 +3,7 @@ import './App.css'
 import { Header } from './components/Header/Header'
 import { ConteinerSaldo } from './components/Saldo/ConteinerSaldo'
 import { Form } from './components/Form/Form'
+import { useEffect } from 'react'
 
 export function App() {
 
@@ -12,6 +13,19 @@ export function App() {
   const [entrada, setEntrada] = useState(0);
   const [saida, setSaida] = useState(0);
   const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    
+    const arrayEntradas = listaTransacoes.filter(transacao => !transacao.saida).map(transacao => transacao.valor)
+    const arraySaidas = listaTransacoes.filter(transacao => transacao.saida).map(transacao => transacao.valor)
+
+    const somaEntradas = arrayEntradas.reduce((acc, num) => acc + num, 0);
+    const somaSaidas = arraySaidas.reduce((acc, num) => acc + num, 0);
+
+    const calculoTotal = somaEntradas - somaSaidas; 
+    setTotal(calculoTotal);
+    
+  }, [listaTransacoes]);
   
   function registrarTransacao(novaTransacao){
     
