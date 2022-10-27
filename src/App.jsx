@@ -14,7 +14,12 @@ export function App() {
   const [total, setTotal] = useState(0);
   
   function registrarTransacao(novaTransacao){
-    console.log(novaTransacao);
+    
+    const novaListaTransacoes = [...listaTransacoes, novaTransacao]
+    setListaTransacoes(novaListaTransacoes)
+
+    localStorage.setItem("listaTransacoes", JSON.stringify(novaListaTransacoes));
+
   }
 
   return (
