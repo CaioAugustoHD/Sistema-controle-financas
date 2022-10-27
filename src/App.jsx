@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import { Header } from './components/Header/Header'
 import { ConteinerSaldo } from './components/Saldo/ConteinerSaldo'
 import { Form } from './components/Form/Form'
-import { useEffect } from 'react'
+import { Lista } from './components/Lista/Lista'
 
 export function App() {
 
@@ -44,6 +44,7 @@ export function App() {
       <Header/>
       <ConteinerSaldo entrada={entrada} saida={saida} total={total}/>
       <Form registrarTransacao={registrarTransacao}/>
+      <Lista listaTransacoes={listaTransacoes}/>
     </>
   )
 }
