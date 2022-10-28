@@ -21,7 +21,8 @@ export function Form({registrarTransacao}){
         let novaTransacao = {
             descricao: descricao,
             valor: Number(valor),
-            saida: isSaida
+            saida: isSaida,
+            index: ""
         }
 
         registrarTransacao(novaTransacao);

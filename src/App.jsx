@@ -33,6 +33,7 @@ export function App() {
   function registrarTransacao(novaTransacao){
     
     const novaListaTransacoes = [...listaTransacoes, novaTransacao]
+    novaListaTransacoes[novaListaTransacoes.length-1].index = novaListaTransacoes.length-1;
     setListaTransacoes(novaListaTransacoes)
 
     localStorage.setItem("listaTransacoes", JSON.stringify(novaListaTransacoes));
