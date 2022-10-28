@@ -2,7 +2,14 @@ import React from "react";
 import { FaCaretSquareUp, FaCaretSquareDown, FaTrash } from "react-icons/fa";
 import "./Lista.css";
 
-export function Lista({listaTransacoes}){
+export function Lista({listaTransacoes, setListaTransacoes}){
+    function removerTransacao(IDtransacao){
+        const novaListaTransacoes = listaTransacoes.filter(transacao => transacao.ID !== IDtransacao);
+        setListaTransacoes(novaListaTransacoes);
+
+        localStorage.setItem("listaTransacoes", JSON.stringify(novaListaTransacoes));
+    }
+
     return (
         <table>
             <thead>
@@ -14,13 +21,13 @@ export function Lista({listaTransacoes}){
                 </tr>
             </thead>
             <tbody>
-                {listaTransacoes.map(item => {
+                {listaTransacoes.map(transacao => {
                     return (
                         <tr>
-                            <td className="desc">{item.descricao}</td>
-                            <td>{item.valor}</td>
-                            <td>{item.saida ? <FaCaretSquareDown/> : <FaCaretSquareUp/>}</td>
-                            <td><button><FaTrash/></button></td>
+                            <td className="desc">{transacao.descricao}</td>
+                            <td>{transacao.valor}</td>
+                            <td>{transacao.saida ? <FaCaretSquareDown/> : <FaCaretSquareUp/>}</td>
+                            <td><button type="button" onClick={() => removerTransacao(transacao.ID)}><FaTrash/></button></td>
                         </tr>
                     )
                 })}

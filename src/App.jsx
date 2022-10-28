@@ -44,7 +44,7 @@ export function App() {
       <Header/>
       <ConteinerSaldo entrada={entrada} saida={saida} total={total}/>
       <Form registrarTransacao={registrarTransacao}/>
-      <Lista listaTransacoes={listaTransacoes}/>
+      <Lista listaTransacoes={listaTransacoes} setListaTransacoes={setListaTransacoes}/>
     </>
   )
 }
