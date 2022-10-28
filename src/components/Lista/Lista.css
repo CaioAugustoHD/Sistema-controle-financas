@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+}
+
+td, th {
+    text-align: center;
+    padding: 4px 3px 4px 10px;
+}
+
+.desc {
+    text-align: start;
+}
+
+td button {
+    padding: 0;
+}
+
+button svg {
+    margin: 0;
+}
