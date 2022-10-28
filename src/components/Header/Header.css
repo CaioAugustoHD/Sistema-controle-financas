@@ -1,6 +1,7 @@
 header {
     width: 100%;
-    padding: 2em;
-    border: 1px solid black;
+    padding: 2em 0 3em;
     text-align: center;
+    background-color: var(--verde-escuro);
+    color: #FFF;
 }

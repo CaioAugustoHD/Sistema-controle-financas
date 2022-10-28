@@ -1,5 +1,6 @@
 form {
-    border: 1px solid black;
+    background-color: var(--verde-claro);
+    color: #FFF;
     width: 70%;
     margin: 1em auto;
     display: flex;
@@ -10,7 +11,7 @@ form {
     font-size: 1.2em;
 }
 
-div {
+div div {
     margin: 0 20px 0.8em 0;
 }
 
@@ -25,6 +26,9 @@ input[type="text"], input[type="number"] {
     display: block;
     font-size: 0.8em;
     padding: 5px;
+    background-color: var(--verde-escuro);
+    color: #FFF;
+    border: none;
 }
 
 div button {

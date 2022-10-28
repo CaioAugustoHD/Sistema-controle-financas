@@ -2,8 +2,8 @@
 
 :root {
   --verde-escuro: #2F3E46;
-  --verde: #354F52;
-  --verde-claro: #52796F;
+  --verde: #3d5154;
+  --verde-claro: #697874;
 
   --up: #2c942c;
   --down: #d51d1d;
@@ -14,5 +14,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: var(--verde);
 }
 

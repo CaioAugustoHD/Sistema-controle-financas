@@ -1,12 +1,14 @@
 section {
-    border: 1px solid black;
-    padding: 2em 0;
+    margin-top: -23px;
+    background-color: var(--verde-claro);
+    color: #FFF;
+    padding: 1.5em 0;
     width: min(30%, 230px);
     text-align: center;
 }
 
 h2 {
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
 }
 
 span {
