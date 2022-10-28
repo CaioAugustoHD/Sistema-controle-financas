@@ -7,6 +7,8 @@ export function Form({registrarTransacao}){
     const [valor, setValor] = useState("");
     const [isSaida, setSaida] = useState(false);
 
+    const gerarID = () => Math.round(Math.random()*100000);
+
     function addTransacao(){
 
         // VALIDAÇÃO DOS INPUT'S
@@ -22,7 +24,7 @@ export function Form({registrarTransacao}){
             descricao: descricao,
             valor: Number(valor),
             saida: isSaida,
-            index: ""
+            ID: gerarID()
         }
 
         registrarTransacao(novaTransacao);
