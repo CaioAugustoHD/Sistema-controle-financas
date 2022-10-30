@@ -5,6 +5,7 @@ section {
     padding: 1.5em 0;
     width: min(30%, 230px);
     text-align: center;
+    border-radius: 5px;
 }
 
 h2 {
@@ -33,5 +34,11 @@ svg {
 
     span {
       font-size: max(3.4vw, 1.3em);  
+    }
+}
+
+@media (max-width: 470px){
+    h2 svg {
+        display: none;
     }
 }
