@@ -44,3 +44,10 @@ button svg {
     margin: 0;
     color: var(--verde-escuro)
 }
+
+@media (max-width: 890px) {
+
+    table {
+        width: 82%;
+    }
+}
