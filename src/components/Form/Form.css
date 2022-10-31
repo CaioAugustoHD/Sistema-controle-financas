@@ -3,6 +3,7 @@ form {
     color: #FFF;
     width: 70%;
     margin: 1em auto;
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -26,13 +27,35 @@ input[type="text"], input[type="number"] {
     display: block;
     font-size: 0.8em;
     padding: 5px;
+    margin-top: 4px;
     background-color: var(--verde-escuro);
     color: #FFF;
-    border: none;
+    border: 1px solid transparent;
+    outline: 0;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border: 1px solid #FFF;
+}
+
+input[type="radio"] {
+    margin-right: 4px;
 }
 
 div button {
     padding: 5px 8px;
+    background-color: var(--up);
+    color: var(--verde-escuro);
+    font-weight: 700;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+div button:hover {
+    background-color: var(--verde-escuro);
+    color: #FFF;
 }
 
 @media (max-width: 890px) {
