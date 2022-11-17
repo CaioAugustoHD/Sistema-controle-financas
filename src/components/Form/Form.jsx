@@ -74,7 +74,7 @@ export function Form({registrarTransacao}){
                 <label htmlFor="radioSaida" >Saída</label>
             </div>
             <div>
-                <button onClick={addTransacao} type="button">Salvar</button>
+                <button className="btn-salvar" onClick={addTransacao} type="button">Salvar</button>
             </div>
         </form>
     )

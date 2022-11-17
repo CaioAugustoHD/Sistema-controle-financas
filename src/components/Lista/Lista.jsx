@@ -15,7 +15,7 @@ export function Lista({listaTransacoes, setListaTransacoes}){
             <tbody>
                 {listaTransacoes.map(transacao => {
                     return (
-                        <tr>
+                        <tr key={transacao.ID}>
                             <td className="desc">{transacao.descricao}</td>
                             <td className="desc">{`R$ ${transacao.valor}`}</td>
                             <td>{transacao.saida ? <FaCaretSquareDown style={{color:"var(--down)"}}/> : <FaCaretSquareUp style={{color:"var(--up)"}}/>}</td>

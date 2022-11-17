@@ -43,7 +43,7 @@ input[type="radio"] {
     margin-right: 4px;
 }
 
-div button {
+button.btn-salvar {
     padding: 5px 8px;
     background-color: var(--up);
     color: var(--verde-escuro);
@@ -54,7 +54,7 @@ div button {
     transition: all 300ms ease;
 }
 
-div button:hover {
+button.btn-salvar:hover {
     background-color: var(--verde-escuro);
     color: #FFF;
 }
