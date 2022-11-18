@@ -9,12 +9,15 @@
 <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0;
 <a href="#white_check_mark-funcionalidades">Funcionalidades</a> &#xa0; | &#xa0;
 <a href="#computer-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
-<a href="#hammer_and_wrench-serviços">Serviços</a> &#xa0; | &#xa0;
+<a href="#hammer_and_wrench-serviços">Serviços</a>
+</p>
+<p align="center">
 <a href="#camera-imagens">Imagens</a> &#xa0; | &#xa0;
 <a href="#orange_book-como-usar">Como usar</a> &#xa0; | &#xa0;
 <a href="#scroll-pré-requisitos">Pré-requisitos</a> &#xa0; | &#xa0;
 <a href="#link-links">Links</a> &#xa0; | &#xa0;
-<a href="#sparkles-autor">Autor</a></p>
+<a href="#sparkles-autor">Autor</a>
+</p>
 
  &#xa0;
  
