@@ -2,7 +2,7 @@ main {
     margin: auto;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 70%;
 }
 
@@ -10,5 +10,6 @@ main {
 
     main {
         width: 82%;
+        justify-content: space-between;
     }
 }
