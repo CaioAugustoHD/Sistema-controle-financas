@@ -17,7 +17,7 @@ export function Lista({listaTransacoes, setListaTransacoes}){
                     return (
                         <tr key={transacao.ID}>
                             <td className="desc">{transacao.descricao}</td>
-                            <td className="desc">{`R$ ${transacao.valor}`}</td>
+                            <td className="desc">{`${transacao.valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`}</td>
                             <td>{transacao.saida ? <FaCaretSquareDown style={{color:"var(--down)"}}/> : <FaCaretSquareUp style={{color:"var(--up)"}}/>}</td>
                             <td><button type="button" onClick={() => removerTransacao(transacao.ID)}><FaTrash/></button></td>
                         </tr>

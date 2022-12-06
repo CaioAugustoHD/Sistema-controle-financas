@@ -23,9 +23,9 @@ export function App() {
     const somaSaidas = arraySaidas.reduce((acc, num) => acc + num, 0);
     const calculoTotal = somaEntradas - somaSaidas;
 
-    setEntrada(`R$ ${somaEntradas}`);
-    setSaida(`R$ ${somaSaidas}`);
-    setTotal(`R$ ${calculoTotal}`);
+    setEntrada(`${somaEntradas.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`);
+    setSaida(`${somaSaidas.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`);
+    setTotal(`${calculoTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`);
 
     
   }, [listaTransacoes]);

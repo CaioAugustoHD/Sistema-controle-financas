@@ -22,7 +22,7 @@ export function Form({registrarTransacao}){
         
         let novaTransacao = {
             descricao: descricao,
-            valor: Number(valor),
+            valor: Number(Number(valor).toFixed(2)),
             saida: isSaida,
             ID: gerarID()
         }
