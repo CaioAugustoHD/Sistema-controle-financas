@@ -4,6 +4,7 @@ section {
     color: #FFF;
     padding: 1.5em 0;
     width: min(30%, 230px);
+    min-width: 225px;
     text-align: center;
     border-radius: 5px;
 }
@@ -22,10 +23,11 @@ svg {
     margin-left: 5px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 990px) {
     
     section {
         padding: max(5%, 1em) 0;
+        min-width: 150px;
     }
 
     h2 {
@@ -33,12 +35,6 @@ svg {
     }
 
     span {
-      font-size: max(3.4vw, 1.3em);  
-    }
-}
-
-@media (max-width: 470px){
-    h2 svg {
-        display: none;
+      font-size: max(3.2vw, 1.3em);  
     }
 }

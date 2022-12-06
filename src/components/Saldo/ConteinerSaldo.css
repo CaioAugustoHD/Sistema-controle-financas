@@ -1,15 +1,38 @@
 main {
     margin: auto;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 70%;
+    gap: 7px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 990px) {
 
     main {
         width: 82%;
         justify-content: space-between;
+    }
+}
+
+@media (max-width: 570px) {
+    main {
+        justify-content: center;
+    }
+
+    main section:last-child {
+        width: 240px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 392px){
+    main section:nth-child(2) {
+        width: 240px;
+        margin-top: 0;
+    }
+
+    main section:first-child {
+        width: 240px;
     }
 }
