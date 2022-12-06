@@ -41,6 +41,7 @@ export function Form({registrarTransacao}){
                     <input 
                         type="text" 
                         id="inputDescricao"
+                        maxLength={20}
                         value={descricao}
                         onChange={(e) => setDescricao(e.target.value)}
                         />
