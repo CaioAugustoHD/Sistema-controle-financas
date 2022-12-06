@@ -85,7 +85,7 @@ As principais funcionalidades do projeto são:
 
 **<p align="center">Aplicação em mobile:</p>**
 <div align="center">
-  <img src="src/assets/mobileprojeto.png" alt="Aplicação em mobile">
+  <img src="src/assets/imgmobile.png" alt="Aplicação em mobile">
 </div>
 
 &#xa0;
